@@ -1,6 +1,6 @@
 .box{
 width: 600px;
-height: 50px;
+height: 30px;
 border: 2px solid black;
 
 }
@@ -17,6 +17,43 @@ animation: move 1s forwards;
   }
 
   to {
-   width: 90%;
+   width: 80%;
   }
+}
+
+
+.box2{
+  width: 600px;
+  height: 30px;
+  border: 2px solid black;
+
+}
+
+.box2:hover .carga2 {
+  height: 100%;
+  background-image: url(./corazon-mask.png);
+  background-size:contain;
+  background-color: red;
+  /* transition: 1s; */
+  animation: move 1s forwards;
+}
+
+
+img{
+  margin-top: 100px;
+  width: 300px;
+  animation: rotat 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+}
+
+@keyframes rotat{
+  from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
 }
